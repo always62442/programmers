@@ -1,7 +1,6 @@
 def func1(humidity, val_set):
     if humidity < val_set:
-        return 0
-
+        return 3
     return 1
 
 def func2(humidity):
