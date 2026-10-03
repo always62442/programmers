@@ -1,0 +1,38 @@
+📘 문제 이름
+
+문자열 겹쳐쓰기
+- 🧩 난이도: level 0
+- 🛠 사용 언어: Python3
+- [문제 링크]https://school.programmers.co.kr/learn/courses/30/lessons/181943
+
+---------
+
+🧠 문제 설명
+
+문자열 my_string, overwrite_string과 정수 s가 주어집니다. 
+문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+---------
+
+💡 아이디어
+
+my_string을 앞부분(처음 ~ s 전), 덮어쓸 부분, 뒷부분(덮어쓴 부분 바로 뒤 ~ 끝)으로 나눠서
+앞부분 + overwrite_string + 뒷부분 형태로 합쳐서 return함
+
+---------
+
+배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
+>> 1. 문자열 슬라이싱 (Slicing)
+   문자열의 특정 구간을 [시작:끝] 형태로 자르는 문법임
+   my_string[:s]: 처음부터 s 전까지의 앞쪽 문자열
+   my_string[s + len(overwrite_string):]: 덮어쓴 부분 바로 뒤부터 끝까지의 뒷쪽 문자열
+
+💡 주의: 파이썬의 문자열은 불변(Immutable) 객체라서 my_string[s] = 'a'처럼 직접 수정이 불가능함. 
+            따라서 앞부분 + 덮어쓸 문자열 + 뒷부분 형태로 나누어 합쳐야 함
+            
+>> 2. 문자열 길이 구하기 (len())
+   덮어쓸 문자열(overwrite_string)이 끝나는 지점을 계산하기 위해 길이를 구해야 함
+   len(overwrite_string): 덮어쓸 문자열의 전체 길이를 반환함
+
+다른 사람의 풀이
+>>

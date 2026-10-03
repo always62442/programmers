@@ -1,0 +1,30 @@
+📘 문제 이름
+
+홀짝 구분하기
+- 🧩 난이도: level 0
+- 🛠 사용 언어: Python3
+- [문제 링크]https://school.programmers.co.kr/learn/courses/30/lessons/181944
+
+---------
+
+🧠 문제 설명
+
+자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 "n is even"을, 홀수이면 "n is odd"를 출력하는 코드를 작성해 보세요.
+
+---------
+
+💡 아이디어
+
+2로 나눈 나머지(a % 2)가 0이면 짝수, 아니면 홀수로 판별해서 if / else로 출력
+
+---------
+
+배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
+>>
+
+다른 사람의 풀이
+>> a = int(input())
+   print(a, "is", 'even' if a % 2 == 0 else 'odd')
+
+>> a = int(input())
+   print("{} is {}".format(a, 'even' if a % 2 == 0 else 'odd'))
