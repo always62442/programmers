@@ -20,20 +20,21 @@ swapcase()를 쓰면 대문자는 소문자로, 소문자는 대문자로 한 �
 ---------
 
 배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
->> 1. swapcase(): 대소문자 반전하기
+>> swapcase(): 대소문자 반전하기
    문자열 안의 모든 대문자는 소문자로, 소문자는 대문자로 바꿔서 새로운 문자열로 반환함
    예) "aBcDe".swapcase() -> AbCdE
    특징: 복잡한 조건문 없이 한 번에 대소문자를 교체할 수 있어서 이번 문제 해결에 가장 빠른 방법임
->> 2. isupper() / islower(): 대소문자 여부 확인하기
+>> isupper() / islower(): 대소문자 여부 확인하기
    문자열(또는 개별 문자)이 대문자인지 소문자인지 검사해서 True 또는 False를 반환함
    isupper(): 모두 대문자이면 True, 아니면 False
    islower(): 모두 소문자이면 True, 아니면 False
    예) "A".isupper() -> True, "A".islower() -> False, "a".islower() -> True
->> 3. upper() / lower(): 대소문자로 일괄 변환하기
+>> upper() / lower(): 대소문자로 일괄 변환하기
    문자열 전체를 대문자 또는 소문자로 변환함
    upper(): 모든 문자를 대문자로 변환함
    lower(): 모든 문자를 소문자로 변환함
    예) "Python".upper() -> PYTHON, "Python".lower() -> python
+   
 >> 요약: swapcase()를 쓰지 않고 직접 구현할 때는 isupper()로 확인하고 lower() / upper()로 바꾸는 연산을 조합함
    char = "a"
    if char.isupper():
