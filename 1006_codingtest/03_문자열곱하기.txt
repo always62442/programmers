@@ -1,0 +1,27 @@
+📘 문제 이름
+
+문자열 곱하기
+- 🧩 난이도: level 0
+- 🛠 사용 언어: Python3
+- [문제 링크]https://school.programmers.co.kr/learn/courses/30/lessons/181940
+
+---------
+
+🧠 문제 설명
+
+문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+---------
+
+💡 아이디어
+
+문자열 * 정수 연산으로 문자열을 k번 반복
+''.join(my_string)은 my_string과 같은 문자열이라 my_string * k로 써도 결과가 같음
+
+---------
+
+배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
+>>
+
+다른 사람의 풀이
+>>
