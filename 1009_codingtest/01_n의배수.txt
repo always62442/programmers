@@ -1,0 +1,27 @@
+📘 문제 이름
+
+n의 배수
+- 🧩 난이도: level 0
+- 🛠 사용 언어: Python3
+- [문제 링크]https://school.programmers.co.kr/learn/courses/30/lessons/181937
+
+---------
+
+🧠 문제 설명
+
+정수 num과 n이 매개 변수로 주어질 때, num이 n의 배수이면 1을 return n의 배수가 아니라면 0을 return하도록 solution 함수를 완성해주세요.
+
+---------
+
+💡 아이디어
+
+num을 n으로 나눈 나머지(num % n)가 0이면 n의 배수이므로 1, 아니면 0을 return
+if / else를 한 줄로 쓰는 삼항 표현식으로 처리
+
+---------
+
+배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
+>>
+
+다른 사람의 풀이
+>>
